@@ -38,7 +38,7 @@ def get_result(image_file, is_api=False):
     classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a',
                'b', 'd', 'e', 'f', 'g', 'h', 'n', 'q', 'r', 't']
-    model = models.load_model('model/emnist.h5')
+    model = models.load_model('model/fashion_mnist_dense.h5')
     try:
         image_bytes = image_file.file.read()
         encoded_string = base64.b64encode(image_bytes)
